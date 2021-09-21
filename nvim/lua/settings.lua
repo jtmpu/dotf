@@ -1,7 +1,7 @@
 local fn = vim.fn
 local opt = vim.opt
 
-opt.mouse = "a"
+-- opt.mouse = "a"
 opt.shell = "/bin/bash"
 
 -- NVim UI
