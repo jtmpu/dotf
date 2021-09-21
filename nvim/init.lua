@@ -1,0 +1,5 @@
+require("plugins")
+require("config.onedark")
+require("config.nvim-lsp")
+require("config.nvim-cmp")
+require("keymappings")
