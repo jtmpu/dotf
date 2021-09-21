@@ -19,8 +19,24 @@ return require("packer").startup(function(use)
   -- Language client for diagnostics, autocomplete and other sweet stuff
   -- Everything is taken from https://github.com/neovim/nvim-lspconfig
   use "neovim/nvim-lspconfig" -- Collection of configurations for built-in LSP client
-  use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
-  use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
-  use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
-  use 'L3MON4D3/LuaSnip' -- Snippets plugin
+  use "hrsh7th/nvim-cmp" -- Autocompletion plugin
+  use "hrsh7th/cmp-nvim-lsp" -- LSP source for nvim-cmp
+  use "saadparwaiz1/cmp_luasnip" -- Snippets source for nvim-cmp
+  use "L3MON4D3/LuaSnip" -- Snippets plugin
+
+  -- Better syntax highlight, linting and style checking, gives nvim better info for
+  -- builtin operations
+  use {
+      "nvim-treesitter/nvim-treesitter",
+      run = ":TSUpdate"
+  }
+
+  -- Change working dir to project's root directory when opening a file
+  use "airblade/vim-rooter"
+
+  -- Downloads and install latest fzf
+  use { "junegunn/fzf", run = ":call fzf#install()" }
+  -- Fzf plugin
+  use "junegunn/fzf.vim"
+
 end)
