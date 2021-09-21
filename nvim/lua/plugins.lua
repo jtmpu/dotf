@@ -39,4 +39,10 @@ return require("packer").startup(function(use)
   -- Fzf plugin
   use "junegunn/fzf.vim"
 
+  use "kyazdani42/nvim-web-devicons"
+  use {
+    'hoob3rt/lualine.nvim',
+    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  }
+
 end)
