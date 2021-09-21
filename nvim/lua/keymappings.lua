@@ -14,6 +14,10 @@ api.nvim_set_keymap("n", "<C-j>", "<C-w>j", { silent = true })
 api.nvim_set_keymap("n", "<C-k>", "<C-w>k", { silent = true })
 api.nvim_set_keymap("n", "<C-l>", "<C-w>l", { silent = true })
 
+
+-- Toggle tree view
+api.nvim_set_keymap("n", "<C-e>", ":NvimTreeToggle<CR>", { silent = true })
+
 -- Tab switch buffer (to be changed, using TAB and S-TAB for autocomplete atm)
 -- vim.api.nvim_set_keymap("n", "<TAB>", ":bnext<CR>", { noremap = true, silent = true })
 -- vim.api.nvim_set_keymap("n", "<S-TAB>", ":bprevious<CR>", { noremap = true, silent = true })

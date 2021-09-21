@@ -51,4 +51,10 @@ return require("packer").startup(function(use)
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
 
+  -- Tree view
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = 'kyazdani42/nvim-web-devicons'
+  }
+
 end)
