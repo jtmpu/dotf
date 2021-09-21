@@ -10,3 +10,13 @@ ripgrep - https://github.com/BurntSushi/ripgrep
 fdfind/fd (symlink to fd) - https://github.com/sharkdp/fd#installation
 
 For treesitter, check lua config if more languages are needed
+
+## Alacritty
+
+Configured to use "Hack" font
+
+For example:
+
+``` 
+apt install fonts-hack
+```
