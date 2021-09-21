@@ -34,12 +34,18 @@ return require("packer").startup(function(use)
   -- Change working dir to project's root directory when opening a file
   use "airblade/vim-rooter"
 
-  -- Downloads and install latest fzf
-  use { "junegunn/fzf", run = ":call fzf#install()" }
-  -- Fzf plugin
-  use "junegunn/fzf.vim"
+  -- Fuzzy finding in searches, files, symbols, references e.t.c.
+  use {
+  'nvim-telescope/telescope.nvim',
+  requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
-  use "kyazdani42/nvim-web-devicons"
+  -- Helper for autocomplete, with additional info on arguments in functions
+  use {
+    "ray-x/lsp_signature.nvim",
+  }
+
+  -- Bottom bar with some random info
   use {
     'hoob3rt/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
