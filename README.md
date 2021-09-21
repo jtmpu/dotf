@@ -18,5 +18,11 @@ Configured to use "Hack" font
 For example:
 
 ``` 
-apt install fonts-hack
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
+
+unzip -> /usr/share/fonts/truetype/hack
+fc-cache -f -v
+
+remove windows fonts?
 ```
+
